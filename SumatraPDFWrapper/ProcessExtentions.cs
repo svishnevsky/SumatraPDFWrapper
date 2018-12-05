@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace SumatraPDFWarpper
+namespace SumatraPDFWrapper
 {
     public static class ProcessExtentions
     {
