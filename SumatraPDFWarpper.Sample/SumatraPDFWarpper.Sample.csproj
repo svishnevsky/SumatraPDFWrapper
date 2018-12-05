@@ -55,5 +55,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SumatraPDFWarpper\SumatraPDFWarpper.csproj">
+      <Project>{c6f3e14e-0e9a-44be-8f7e-6a567f85c27b}</Project>
+      <Name>SumatraPDFWarpper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
