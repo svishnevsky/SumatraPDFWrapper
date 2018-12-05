@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net46;net47</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Sergey Vishnesky</Authors>
+    <Company>Sergey Vishnesky</Company>
+    <Product>SumatraPDFWarpper</Product>
+    <Description>Util to print PDF documents using SumatraPDF CLI</Description>
+    <Copyright>Copyright 2018</Copyright>
+    <PackageLicenseUrl>https://choosealicense.com/licenses/mit/</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/svishnevsky/SumatraPDFWarpper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/svishnevsky/SumatraPDFWarpper</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>PDF Printing</PackageTags>
+    <PackageReleaseNotes>Implemented SumatraPDF wrapper</PackageReleaseNotes>
+    <PackageId>SumatraPDFWarpper</PackageId>
+    <RootNamespace>SumatraPDFWarpper</RootNamespace>
+    <AssemblyName>SumatraPDFWarpper</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="build\*.*">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
