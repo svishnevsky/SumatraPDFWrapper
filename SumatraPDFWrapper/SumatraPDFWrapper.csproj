@@ -9,14 +9,14 @@
     <Description>Util to print PDF documents using SumatraPDF CLI</Description>
     <Copyright>Copyright 2018</Copyright>
     <PackageLicenseUrl>https://choosealicense.com/licenses/mit/</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/svishnevsky/SumatraPDFWarpper</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/svishnevsky/SumatraPDFWarpper</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/svishnevsky/SumatraPDFWrapper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/svishnevsky/SumatraPDFWrapper</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>PDF Printing</PackageTags>
     <PackageReleaseNotes>Implemented SumatraPDF wrapper</PackageReleaseNotes>
-    <PackageId>SumatraPDFWarpper</PackageId>
-    <RootNamespace>SumatraPDFWarpper</RootNamespace>
-    <AssemblyName>SumatraPDFWarpper</AssemblyName>
+    <PackageId>SumatraPDFWrapper</PackageId>
+    <RootNamespace>SumatraPDFWrapper</RootNamespace>
+    <AssemblyName>SumatraPDFWrapper</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

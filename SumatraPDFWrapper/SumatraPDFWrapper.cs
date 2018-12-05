@@ -4,9 +4,9 @@ using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace SumatraPDFWarpper
+namespace SumatraPDFWrapper
 {
-    public class SumatraPDFWarpper
+    public class SumatraPDFWrapper
     {
         private static readonly string utilPath = Path.Combine(
             Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
