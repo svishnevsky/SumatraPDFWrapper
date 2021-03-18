@@ -8,9 +8,7 @@ namespace SumatraPDFWrapper
 {
     public class SumatraPDFWrapper
     {
-        private static readonly string utilPath = Path.Combine(
-            Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
-            "SumatraPDF.exe");
+        private static readonly string utilPath = GetUtilPath("SumatraPDF.exe");
         private static readonly TimeSpan printTimeout = new TimeSpan(0, 1, 0);
 
         /// <summary>
@@ -23,7 +21,7 @@ namespace SumatraPDFWrapper
         public async Task Print(
             string filePath, string printerName, TimeSpan? timeout = null)
         {
-            using (var proc = new Process
+            using (Process proc = new Process
             {
                 StartInfo =
                     {
@@ -36,12 +34,21 @@ namespace SumatraPDFWrapper
             })
             {
                 proc.Start();
-                bool result = await proc.WaitForExitAsync(timeout ?? printTimeout);
+                bool result = await proc.WaitForExitAsync(timeout ?? printTimeout)
+                    .ConfigureAwait(false);
                 if (!result)
                 {
                     proc.Kill();
                 }
             }
+        }
+
+        private static string GetUtilPath(string utilName)
+        {
+            return Path.Combine(
+                Path.GetDirectoryName(
+                    (Assembly.GetEntryAssembly() ?? Assembly.GetExecutingAssembly()).Location),
+                utilName);
         }
     }
 }
