@@ -1,8 +1,19 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Target Name="CopyREsources" AfterTargets="Build">
+  <Target Name="CopyResources" AfterTargets="Build">
     <Copy
        SourceFiles="$(MSBuildThisFileDirectory)SumatraPDF.exe"
-       DestinationFiles="$(MSBuildProjectDirectory)\bin\$(Configuration)\SumatraPDF.exe"
-       Condition="!Exists('$(MSBuildProjectDirectory)\bin\$(Configuration)\SumatraPDF.exe')" />
+       DestinationFiles="$(OutDir)\SumatraPDF.exe"
+       Condition="!Exists('$(OutDir)\SumatraPDF.exe')" />
+  </Target>
+  <Target Name="CopySumatraPDFExe" AfterTargets="Publish">
+    <Copy
+      SourceFiles="$(MSBuildThisFileDirectory)SumatraPDF.exe"
+      DestinationFolder="$(PublishDir)"
+      SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="PrepareStaticToPublish" BeforeTargets="AssignTargetPaths" DependsOnTargets="BeforePublish">
+    <ItemGroup>
+      <Content Include="$(MSBuildThisFileDirectory)SumatraPDF.exe" CopyToPublishDirectory="PreserveNewest" />
+    </ItemGroup>
   </Target>
 </Project>

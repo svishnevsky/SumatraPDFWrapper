@@ -1,19 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net46;net47</TargetFrameworks>
+    <TargetFrameworks>net45;net46;net47;net48;netstandard2.0;net5;</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Sergey Vishnesky</Authors>
     <Company>Sergey Vishnesky</Company>
     <Product>SumatraPDFWarpper</Product>
     <Description>Util to print PDF documents using SumatraPDF CLI</Description>
-    <Copyright>Copyright 2018</Copyright>
+    <Copyright>Copyright 2021</Copyright>
     <PackageLicenseUrl>https://choosealicense.com/licenses/mit/</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/svishnevsky/SumatraPDFWrapper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/svishnevsky/SumatraPDFWrapper</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>PDF Printing</PackageTags>
-    <PackageReleaseNotes>Implemented SumatraPDF wrapper</PackageReleaseNotes>
+    <PackageReleaseNotes>Added Net5 support</PackageReleaseNotes>
     <PackageId>SumatraPDFWrapper</PackageId>
     <RootNamespace>SumatraPDFWrapper</RootNamespace>
     <AssemblyName>SumatraPDFWrapper</AssemblyName>
