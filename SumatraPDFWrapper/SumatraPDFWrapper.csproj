@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/svishnevsky/SumatraPDFWrapper</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>PDF Printing</PackageTags>
-    <PackageReleaseNotes>Added Net5 support</PackageReleaseNotes>
+    <PackageReleaseNotes>Added "ConfigureAwait(false)"</PackageReleaseNotes>
     <PackageId>SumatraPDFWrapper</PackageId>
     <RootNamespace>SumatraPDFWrapper</RootNamespace>
     <AssemblyName>SumatraPDFWrapper</AssemblyName>
